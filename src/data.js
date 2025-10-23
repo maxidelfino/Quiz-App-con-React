@@ -52,6 +52,22 @@ const {
   charactersAndPopularCulture,
 } = categories;
 
+export const categoryImages = {
+  // usa las cadenas visibles (los valores de categories) como keys,
+  // así puedes buscarlas directamente con el param `category`
+  [categories.historia]: Historia, // si tienes la import Historia arriba
+  [categories.literatura]: Literatura,
+  [categories.deportes]: Deportes,
+  [categories.ciencia]: Ciencia,
+  [categories.filosofia]: Filosofia,
+  [categories.tecnologia]: Tecnologia,
+  [categories.geografia]: Geografia,
+  [categories.symbolsOfVenezuela]: SymbolsOfVenezuela,
+  [categories.venezuelanFoodsAndFlavors]: VenezuelanFoodsAndFlavors,
+  [categories.placesAndCitiesOfVenezuela]: PlacesAndCitiesOfVenezuela,
+  [categories.charactersAndPopularCulture]: CharactersAndPopularCulture,
+};
+
 export const questions = [
   {
     id: 1,

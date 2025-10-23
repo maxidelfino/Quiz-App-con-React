@@ -1,38 +1,34 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Question } from "../components/Question";
-import { questions, imgs } from "../data";
+import { questions, categoryImages } from "../data";
 
-// Función para barajar las preguntas de cada categoría y también reducirla al número de 5
 const shuffleArray = (array) => {
-  const newArray = array.sort(() => Math.random() - 0.5);
-  return newArray.slice(0, 5);
-};
-
-// Función que elimina los espacios de un string
-const removeSpaces = (str) => {
-  return str.replace(/\s+/g, "");
+  return array
+    .map((item) => ({ ...item, sort: Math.random() }))
+    .sort((a, b) => a.sort - b.sort)
+    .slice(0, 5);
 };
 
 export const CategoryPage = () => {
-  // Leer El parametro de la URL
   const { category } = useParams();
-  console.log({ category });
 
-  const [imgCategory] = imgs.filter(
-    (img) => img === `/src/assets/${removeSpaces(category).toLowerCase()}.png`
-  );
+  const imgCategory = categoryImages[category];
 
-  const [questionsFiltered, setQuestionsFiltered] = useState(
-    questions.filter((question) => question.category === category)
+  const [questionsFiltered, setQuestionsFiltered] = useState(() =>
+    questions.filter((q) => q.category === category)
   );
   const [indexQuestion, setIndexQuestion] = useState(0);
   const [activeQuiz, setActiveQuiz] = useState(false);
 
   useEffect(() => {
-    const newQuestions = shuffleArray(questionsFiltered);
+    const newQuestions = shuffleArray(
+      questions.filter((q) => q.category === category)
+    );
     setQuestionsFiltered(newQuestions);
-  }, []);
+    setIndexQuestion(0);
+    setActiveQuiz(false);
+  }, [category]);
 
   return (
     <div
@@ -55,7 +51,13 @@ export const CategoryPage = () => {
             </h1>
 
             <div className="flex justify-center items-center">
-              <img src={imgCategory} alt={category} className="w-72" />
+              {imgCategory ? (
+                <img src={imgCategory} alt={category} className="w-72" />
+              ) : (
+                <div className="w-72 h-48 flex items-center justify-center bg-gray-200">
+                  <span>No hay imagen</span>
+                </div>
+              )}
             </div>
           </div>
 
