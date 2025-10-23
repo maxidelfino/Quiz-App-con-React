@@ -13,6 +13,8 @@ export const AppRouter = () => {
 					path='/category/:category'
 					element={<CategoryPage />}
 				/>
+				{/* Ruta para manejar 404 */}
+				<Route path="*" element={<HomePage />} />
 			</Routes>
 		</>
 	);
