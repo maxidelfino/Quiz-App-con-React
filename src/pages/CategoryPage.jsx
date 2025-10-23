@@ -55,7 +55,7 @@ export const CategoryPage = () => {
                 <img src={imgCategory} alt={category} className="w-72" />
               ) : (
                 <div className="w-72 h-48 flex items-center justify-center bg-gray-200">
-                  <span>No hay imagen</span>
+                  <span>No image available</span>
                 </div>
               )}
             </div>
@@ -65,7 +65,7 @@ export const CategoryPage = () => {
             className="text-white bg-gray-900 py-2 rounded-lg font-bold px-5 transition-all hover:bg-yellow-500 hover:text-gray-900"
             onClick={() => setActiveQuiz(true)}
           >
-            Iniciar Quiz
+            Start Quiz
           </button>
         </>
       )}

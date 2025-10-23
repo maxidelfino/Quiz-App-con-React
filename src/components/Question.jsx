@@ -59,11 +59,11 @@ export const Question = ({
 				<div className='flex flex-col justify-between shadow-md shadow-slate-300 w-full max-w-[600px] h-[600px] p-5 sm:p-10 rounded-lg'>
 					<div className='flex justify-between'>
 						<span className='text-xl font-bold'>
-							{/* Número de pregunta actual y Número de preguntas totales */}
+							{/* Current question number / Total number of questions */}
 							{indexQuestion + 1} / {questionsFiltered.length}
 						</span>
 						<div>
-							<span className='font-semibold'>Dificultad: </span>
+							<span className='font-semibold'>Difficulty: </span>
 							<span className='font-bold'>
 								{filteredQuestion.difficulty}
 							</span>
@@ -74,13 +74,13 @@ export const Question = ({
 						className='border px-5 py-2 rounded-lg font-bold transition-all hover:bg-yellow-500 hover:text-gray-900'
 						onClick={onReset}
 					>
-						Reiniciar
+						Restart
 					</button>
 					<div>
 						<h1 className='font-bold'>{filteredQuestion.question}</h1>
 					</div>
 
-					{/* Las respuestas aquí */}
+					{/* The answers here */}
 					<div
 						className={`
 							grid gap-5
@@ -88,7 +88,7 @@ export const Question = ({
 							sm:grid-cols-2 sm:grid-rows-2
 						`}
 					>
-						{/* Mapeamos un arreglo de respuesta correcta y respuestas incorrectas */}
+						{/* Mapping an array with correct and incorrect answers */}
 						{answersRandom.map((answer, index) => (
 							<button
 								className={`
@@ -122,15 +122,15 @@ export const Question = ({
 						))}
 					</div>
 
-					{/* Si la respuesta fue equivocada, mostramos la respuesta correcta */}
+					{/* If the answer was incorrect, show the correct answer */}
 					{answered && wasCorrect === false && (
 						<div className="mt-3 text-center">
-							<span className="text-red-600 font-bold">Respuesta correcta: </span>
+							<span className="text-red-600 font-bold">Correct answer: </span>
 							<span className="font-semibold">{filteredQuestion.correct_answer}</span>
 						</div>
 					)}
 
-					{/* Condicional para mostrar el botón de siguiente pregunta o el de finalizar */}
+					{/* Conditional to show "Next Question" button or "Finish" button */}
 					{indexQuestion + 1 === questionsFiltered.length ? (
 						<button
 							className='border-2 border-yellow-600 text-yellow-600 rounded-md px-5 py-2 hover:bg-yellow-600 hover:text-black font-medium'
@@ -141,7 +141,7 @@ export const Question = ({
 							}}
 							disabled={!answered}
 						>
-							Finalizar
+							Finish
 						</button>
 					) : (
 						<button
@@ -149,7 +149,7 @@ export const Question = ({
 							onClick={onNextQuestion}
 							disabled={!answered}
 						>
-							Siguiente Pregunta
+							Next Question
 						</button>
 					)}
 				</div>
