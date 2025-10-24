@@ -98,7 +98,7 @@ export const questions = [
     difficulty: "Easy",
     question: "What is the national bird of Venezuela?",
     category: symbolsOfVenezuela,
-    correct_answer: "Turpial",
+    correct_answer: "Troupial",
     incorrect_answers: ["Quetzal", "Condor", "Guanabana"],
   },
   {
@@ -142,18 +142,18 @@ export const questions = [
     correct_answer: "8",
     incorrect_answers: ["7", "9", "6"],
   },
-  {
-    id: 9,
-    difficulty: "Easy",
-    question: "What appears in the center of the Venezuelan coat of arms?",
-    category: symbolsOfVenezuela,
-    correct_answer: "A horse and agricultural elements",
-    incorrect_answers: [
-      "A tower and a lion",
-      "A dove with a branch",
-      "A lighthouse and an anchor",
-    ],
-  },
+  // {
+  //   id: 9,
+  //   difficulty: "Easy",
+  //   question: "What appears in the center of the Venezuelan coat of arms?",
+  //   category: symbolsOfVenezuela,
+  //   correct_answer: "A horse and agricultural elements",
+  //   incorrect_answers: [
+  //     "A tower and a lion",
+  //     "A dove with a branch",
+  //     "A lighthouse and an anchor",
+  //   ],
+  // },
   {
     id: 10,
     difficulty: "Easy",
@@ -226,14 +226,14 @@ export const questions = [
     correct_answer: "Chicha",
     incorrect_answers: ["Kefir", "Sake", "Kombucha"],
   },
-  {
-    id: 18,
-    difficulty: "Easy",
-    question: "Which Venezuelan dessert is made with green papaya and panela?",
-    category: venezuelanFoodsAndFlavors,
-    correct_answer: "Dulce de lechosa",
-    incorrect_answers: ["Quesillo", "Tres leches", "Bienmesabe"],
-  },
+  // {
+  //   id: 18,
+  //   difficulty: "Easy",
+  //   question: "Which Venezuelan dessert is made with green papaya and panela?",
+  //   category: venezuelanFoodsAndFlavors,
+  //   correct_answer: "Dulce de lechosa",
+  //   incorrect_answers: ["Quesillo", "Tres leches", "Bienmesabe"],
+  // },
   {
     id: 19,
     difficulty: "Easy",
@@ -246,7 +246,7 @@ export const questions = [
     id: 20,
     difficulty: "Easy",
     question:
-      "Which typical Venezuelan food is a fried corn empanada very popular on the streets?",
+      "What typical Venezuelan fried food is very popular on the streets?",
     category: venezuelanFoodsAndFlavors,
     correct_answer: "Venezuelan empanada",
     incorrect_answers: ["Samosa", "French crepe", "Dumpling"],
@@ -433,7 +433,7 @@ export const questions = [
     id: 40,
     difficulty: "Easy",
     question:
-      "Which fair or popular festival is celebrated in many Venezuelan cities with music and parades (e.g. at Carnaval)?",
+      "Which fair or popular festival is celebrated in many Venezuelan cities with music and parades?",
     category: charactersAndPopularCulture,
     correct_answer: "Carnival",
     incorrect_answers: ["Oktoberfest", "Thanksgiving", "Diwali"],
@@ -645,7 +645,7 @@ export const questions = [
     question:
       "Which Venezuelan TV host or figure is famous for classic children's shows (historical figure)?",
     category: charactersAndPopularCulture,
-    correct_answer: "Renny Ottolina (historical TV figure)",
+    correct_answer: "Renny Ottolina",
     incorrect_answers: ["Bill Cosby", "David Letterman", "Conan O'Brien"],
   },
   {
@@ -654,7 +654,7 @@ export const questions = [
     question:
       "What sport is considered the most popular in Venezuela alongside baseball?",
     category: charactersAndPopularCulture,
-    correct_answer: "Soccer (Football)",
+    correct_answer: "Soccer",
     incorrect_answers: ["Ice hockey", "Curling", "Cricket"],
   },
   {
@@ -735,8 +735,7 @@ export const questions = [
   {
     id: 73,
     difficulty: "Easy",
-    question:
-      "What is a common breakfast in Venezuela that includes arepa and cheese?",
+    question: "What is a common breakfast in Venezuela?",
     category: venezuelanFoodsAndFlavors,
     correct_answer: "Arepa with cheese",
     incorrect_answers: [
@@ -794,15 +793,15 @@ export const questions = [
       "Onion rings",
     ],
   },
-  {
-    id: 79,
-    difficulty: "Easy",
-    question:
-      "What is a popular filling for arepas that consists of shredded chicken with mayonnaise or sauce?",
-    category: venezuelanFoodsAndFlavors,
-    correct_answer: "Shredded chicken",
-    incorrect_answers: ["Smoked salmon", "Russian caviar", "Foie gras"],
-  },
+  // {
+  //   id: 79,
+  //   difficulty: "Easy",
+  //   question:
+  //     "What is a popular filling for arepas that consists of shredded chicken with mayonnaise or sauce?",
+  //   category: venezuelanFoodsAndFlavors,
+  //   correct_answer: "Shredded chicken",
+  //   incorrect_answers: ["Smoked salmon", "Russian caviar", "Foie gras"],
+  // },
   {
     id: 80,
     difficulty: "Easy",
@@ -866,16 +865,16 @@ export const questions = [
     correct_answer: "Joropo",
     incorrect_answers: ["Techno", "Hard rock", "Grunge"],
   },
-  {
-    id: 87,
-    difficulty: "Easy",
-    question:
-      "Which Venezuelan actor or actress was Miss Universe or Miss World (well-known beauty queen)?",
-    category: charactersAndPopularCulture,
-    correct_answer:
-      "Silhouette of famous winners (e.g., Venezuela has had several international queens to date)",
-    incorrect_answers: ["Marilyn Monroe", "Audrey Hepburn", "Grace Kelly"],
-  },
+  // {
+  //   id: 87,
+  //   difficulty: "Easy",
+  //   question:
+  //     "Which Venezuelan actor or actress was Miss Universe or Miss World (well-known beauty queen)?",
+  //   category: charactersAndPopularCulture,
+  //   correct_answer:
+  //     "Silhouette of famous winners (e.g., Venezuela has had several international queens to date)",
+  //   incorrect_answers: ["Marilyn Monroe", "Audrey Hepburn", "Grace Kelly"],
+  // },
   {
     id: 88,
     difficulty: "Easy",
@@ -916,15 +915,15 @@ export const questions = [
     correct_answer: "Orinoco",
     incorrect_answers: ["Amazon", "Nile", "Mississippi"],
   },
-  {
-    id: 92,
-    difficulty: "Easy",
-    question:
-      "What word in Venezuela is commonly used to refer to the beach informally (e.g. common 'playa')?",
-    category: placesAndCitiesOfVenezuela,
-    correct_answer: "Playa",
-    incorrect_answers: ["Shoreline", "Strand", "Rivage"],
-  },
+  // {
+  //   id: 92,
+  //   difficulty: "Easy",
+  //   question:
+  //     "What word in Venezuela is commonly used to refer to the beach informally (e.g. common 'playa')?",
+  //   category: placesAndCitiesOfVenezuela,
+  //   correct_answer: "Playa",
+  //   incorrect_answers: ["Shoreline", "Strand", "Rivage"],
+  // },
   {
     id: 93,
     difficulty: "Easy",
@@ -984,15 +983,15 @@ export const questions = [
     correct_answer: "Plata",
     incorrect_answers: ["Beef", "Fruit", "Paper"],
   },
-  {
-    id: 99,
-    difficulty: "Easy",
-    question:
-      "Which Venezuelan city is known for its tradition in the automotive industry and is in the center of the country?",
-    category: placesAndCitiesOfVenezuela,
-    correct_answer: "Valencia",
-    incorrect_answers: ["Porlamar", "Coro", "Tucupita"],
-  },
+  // {
+  //   id: 99,
+  //   difficulty: "Easy",
+  //   question:
+  //     "Which Venezuelan city is known for its tradition in the automotive industry and is in the center of the country?",
+  //   category: placesAndCitiesOfVenezuela,
+  //   correct_answer: "Valencia",
+  //   incorrect_answers: ["Porlamar", "Coro", "Tucupita"],
+  // },
   {
     id: 100,
     difficulty: "Easy",
